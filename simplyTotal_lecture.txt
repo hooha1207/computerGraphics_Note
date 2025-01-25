@@ -52,4 +52,10 @@ p0과 p1 사이의 값을 선형보간하는 방법에 대해 설명한다
 이후 p와 q 쿼터니언을 곱해 새로운 쿼터니언을 만들고
 *q를 또 곱해 나온 쿼터니언의 i, j, k 부분이
 특정 축으로 회전한 position 벡터 값이 된다
+
+spherical linear interpolation 계산 방법을 알려줌
+sin(pi*(1-t)) / sin(pi) * p + sin(pi*t) / sin(pi) * q
+아래 공식에서 t는 가변 pㅇ하 q 사이를 뜻하는 가변인자다
+
+
 }
