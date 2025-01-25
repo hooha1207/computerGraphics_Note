@@ -6,6 +6,8 @@
 해당 강의는 실시간 렌더링 기술을중점으로 설명한다 한다
 }
 
+
+
 2장
 {
 orthonormal standard basis
@@ -36,9 +38,12 @@ orthonormal non-standard
 
 line, ray, linear interpolation 즉 선형보간에 대해 설명한다
 p0과 p1 사이의 값을 선형보간하는 방법에 대해 설명한다
+}
+
 
 
 11장
+{
 키프레임 애니메이션과 키 데이터를 그래프로 표현하는 방법에 대해 설명한다
 
 선형보간을 이용해 회전을 보간하면 생기는 문제에 대해 알려준다
@@ -57,5 +62,14 @@ spherical linear interpolation 계산 방법을 알려줌
 sin(pi*(1-t)) / sin(pi) * p + sin(pi*t) / sin(pi) * q
 아래 공식에서 t는 가변 pㅇ하 q 사이를 뜻하는 가변인자다
 
+쿼터니언을 4x4 행렬로 만드는 방법에 대해 설명해줌
 
+회전을 표현하는 쿼터니언 = q = (qx, qy, qz, qw)
+
+1 - 2 * (power(qy,2)+power(qz,2))      2(qx * qy - qw * qz)                   2 * (qx * qz + qw * qy)                 0
+2 * (qx * qy + qw * qz)                1-2 * (power(qx,2) + power(qz,2))      2 * (qy * qz - qw * qx)                 0
+2 * (qx * qz - qw * qy)                2 * (qy * qz + qw * qx)                1 - 2 * (power(qx,2) + power(qy,2))     0
+0                                      0                                      0                                       1
+
+위 행렬로 쿼터니언을 4x4 행렬로 만들 수 있다
 }
