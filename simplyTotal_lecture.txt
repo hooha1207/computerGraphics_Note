@@ -72,4 +72,5 @@ sin(pi*(1-t)) / sin(pi) * p + sin(pi*t) / sin(pi) * q
 0                                      0                                      0                                       1
 
 위 행렬로 쿼터니언을 4x4 행렬로 만들 수 있다
+이를 이용해 transforms matrix를 만들면 된다
 }
